@@ -8,7 +8,7 @@ from llama_index.llms.openai import OpenAI
 
 #load_dotenv()
 #openai.api_key = os.getenv("OPENAI_API_KEY")
-st.write("OPENAIAPI:", st.secrets["openai_api_key"])
+openai_api_key = st.secrets.Secrets.key
 
 def main():
     st.header("PDFの内容に関する質問をしてください")
